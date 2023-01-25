@@ -1,0 +1,116 @@
+@use "../../styles/colors" as colors;
+
+.movie {
+  /* background: #696969; */
+  border-radius: 28px;
+  display: inline-block;
+
+  &__img {
+    border-radius: 28px;
+    width: 100%;
+  }
+
+  &__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+
+    &-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: 60px;
+      margin-top: 15px;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin: 0;
+      line-height: 0;
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+  }
+
+  &__icon {
+    /* position: absolute; */
+    width: 15px;
+    height: 15px;
+    /* margin-top: 15px; */
+    fill: #f9df53;
+    margin-right: 5px;
+  }
+
+  &__genres {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    &-item {
+      border: solid;
+      border-radius: 5px;
+      /* border-color: #e3e3e3;
+    color: #989a9c; */
+      padding: 5px;
+      font-size: 12px;
+
+      &--Action {
+        color: colors.$Action;
+      }
+
+      &--Documentary {
+        color: colors.$Documentary;
+      }
+
+      &--Music {
+        color: colors.$Music;
+      }
+
+      &--History {
+        color: colors.$History;
+      }
+
+      &--Comedy {
+        color: colors.$Comedy;
+      }
+
+      &--Sport {
+        color: colors.$Sport;
+      }
+
+      &--Drama {
+        color: colors.$Drama;
+      }
+
+      &--Mystery {
+        color: colors.$Mystery;
+      }
+
+      &--Adventure {
+        color: colors.$Adventure;
+      }
+
+      &--Crime {
+        color: colors.$Crime;
+      }
+
+      &--Biography {
+        color: colors.$Biography;
+      }
+    }
+  }
+}

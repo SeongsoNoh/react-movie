@@ -1,0 +1,148 @@
+@use "../styles/colors" as colors;
+
+.detail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 40px 60px;
+
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  &__img {
+    border-radius: 28px;
+  }
+
+  &__title {
+    /* text-align: center; */
+  }
+  &__content {
+    padding: 0 50px 0 50px;
+    margin-right: 150px;
+  }
+
+  &__description {
+    p {
+      padding: 10px 25px 10px 0px;
+      line-height: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 24px;
+
+    &-item {
+      p {
+        margin: 4px;
+
+        &:first-of-type {
+          color: #989a9c;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+
+  &__genres-items {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__genres-item {
+    display: inline-block;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+
+    &--Action {
+      color: colors.$Action;
+    }
+
+    &--Documentary {
+      color: colors.$Documentary;
+    }
+
+    &--Music {
+      color: colors.$Music;
+    }
+
+    &--History {
+      color: colors.$History;
+    }
+
+    &--Comedy {
+      color: colors.$Comedy;
+    }
+
+    &--Sport {
+      color: colors.$Sport;
+    }
+
+    &--Drama {
+      color: colors.$Drama;
+    }
+
+    &--Mystery {
+      color: colors.$Mystery;
+    }
+
+    &--Adventure {
+      color: colors.$Adventure;
+    }
+
+    &--Crime {
+      color: colors.$Crime;
+    }
+
+    &--Biography {
+      color: colors.$Biography;
+    }
+
+    &--Fantasy {
+      color: colors.$Fantasy;
+    }
+
+    &--Sci-Fi {
+      color: colors.$Sci-Fi;
+    }
+  }
+
+  &__download {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    a {
+      color: #fff;
+      width: 50%;
+      border: solid 1px;
+      border-radius: 5px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    &-item--720p {
+      background-color: #74d19d;
+    }
+
+    &-item--1080p {
+      background-color: #41c1c1;
+    }
+
+    &-item--2160p {
+      background-color: #3b82f6;
+    }
+  }
+
+  &__close {
+    &-icon {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
