@@ -75,7 +75,7 @@ function Detail() {
         </div>
       </div>
       <div className="detail__close">
-        <Link to={`/`}>
+        <Link to={`${process.env.PUBLIC_URL}/`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
